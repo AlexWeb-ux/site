@@ -21,30 +21,7 @@ function SmoothMenuScroll() {
     }
     SmoothMenuScroll();
 
-    function OnePageMenuScroll() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            var menuAnchor = $('.one-page-scroll-menu .scrollToLink').children('a');
-            menuAnchor.each(function() {
-                // grabing section id dynamically
-                var sections = $(this).attr('href');
-                $(sections).each(function() {
-                    // checking is scroll bar are in section
-                    if ($(this).offset().top <= windscroll + 100) {
-                        // grabing the dynamic id of section
-                        var Sectionid = $(sections).attr('id');
-                        // removing current class from others
-                        $('.one-page-scroll-menu').find('li').removeClass('current');
-                        // adding current class to related navigation
-                        $('.one-page-scroll-menu').find('a[href*=\\#' + Sectionid + ']').parent().addClass('current');
-                    }
-                });
-            });
-        } else {
-            $('.one-page-scroll-menu li.current').removeClass('current');
-            $('.one-page-scroll-menu li:first').addClass('current');
-        }
-    }	
+	
 	
   $("section").waypoint(
     function (direction) {
