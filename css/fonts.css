@@ -1,0 +1,22 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+	src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+			url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Minecraft Rus';
+	src: url('../fonts/Minecraft/Minecraft.eot');
+	src: local('Minecraft Rus Regular'), local('Minecraft'),
+			url('../fonts/Minecraft/Minecraft.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Minecraft/Minecraft.woff2') format('woff2'),
+			url('../fonts/Minecraft/Minecraft.woff') format('woff'),
+			url('../fonts/Minecraft/Minecraft.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
