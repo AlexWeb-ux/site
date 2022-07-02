@@ -39,4 +39,5 @@ $(document).ready(function () {
     $("header.header").removeClass("visible");
     $(".nav__icon").removeClass("hidden");
   });
+	
 });
