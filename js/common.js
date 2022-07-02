@@ -4,7 +4,7 @@ $(document).ready(function () {
         var scroll_el = $(this).attr('href');
         if ($(scroll_el).length != 0) {
             $('html, body').animate({
-                scrollTop: $(scroll_el).offset().top - 60
+                scrollTop: $(scroll_el).offset().top - 10
             }, 800);
         }
         return false;
@@ -12,7 +12,7 @@ $(document).ready(function () {
 		var myHash = location.hash; 
 		location.hash = ''; 
 		if(myHash[1] != undefined){ 
-       $('html, body').animate({scrollTop: $(myHash).offset().top - 60}, 800);
+       $('html, body').animate({scrollTop: $(myHash).offset().top - 10}, 800);
     };  
 	
   $("section").waypoint(
